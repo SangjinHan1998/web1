@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><picture> element</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<h2>The picture Element</h2>
+
+<picture>
+  <source media="(min-width: 650px)" srcset="apple.jpg">
+  <source media="(min-width: 960px)" srcset="berry.png">
+  <img src="banana.png" style="width:auto;">
+</picture>
+
+<p>Resize the browser to see different versions of the picture loading at different viewport sizes.
+The browser looks for the first source element where the media query matches the user's current viewport width,
+and fetches the image specified in the srcset attribute.</p>
+
+<p>다양한 뷰포트 크기로 로드된 여러 버전의 그림을 보려면 브라우저 크기를 조정하십시오.
+브라우저는 미디어 조회가 사용자의 현재 뷰포트 폭과 일치하는 첫 번째 소스 요소를 찾습니다.
+srcset 특성에 지정된 이미지를 가져옵니다.</p>
+
+<p>The img element is required as the last child tag of the picture declaration block.
+The img element is used to provide backward compatibility for browsers that do not support the picture element, or if none of the source tags matched.
+</p>
+
+<p>img 요소는 그림 선언 블록의 마지막 하위 태그로 필요합니다.
+    img 요소는 그림 요소를 지원하지 않거나 일치하는 원본 태그가 없을 경우 이전 버전과의 호환성을 제공하기 위해 사용됩니다.</p>
+
+<p><strong>Note:</strong> The picture element is not supported in IE12 and earlier or Safari 9.0 and earlier.</p>
+<p>그림 요소는 IE12 이전 버전 또는 Safari 9.0 이전 버전에서는 지원되지 않습니다.</p>
+
+</body>
