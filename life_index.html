@@ -25,8 +25,12 @@ body
         <li><a href = "2.html">CSS </a></li>
         <li><a href = "3.html">JavaScript</a></li>
         <li><a href = "4.html">Python Summary</a></li>
-        <li>ol(Orderde List) 은 숫자로 된 리스트 ul 은 그냥 리스트</li>
-        <li> ul(Unordered List) 은 그냥 리스트</li>
+        <li><a href = "htmltable.html">HTML TABLE 정리</a></li>
+        <li><a href = "htmllist.html">HTML LIST 정리</a></li>
+        <li><a href = "htmlblockinline.html">HTML BLOCK & INLINE 정리</a></li>
+        <li><a href = "htmlclasses.html">HTML CLASS ATTRIBUTE 정리</a></li>
+        <li><a href = "htmlid.html">HTML id Attribute</a></li>
+        <li><a href = "htmlbookmark.html">How to use HTML Bookmark</a></li>
     </ol>
     <h2>WELCOME TO WEB</h2>
     <p>
@@ -74,21 +78,20 @@ body
     <h3> HTML TABLE </h3>
     <style>
         table, th, td {
-          border:2px solid rgb(93, 82, 158);
+          border:2px solid rgb(0, 0, 0);
           border-collapse: collapse;
-          border-style : dotted;
+        }
+        tr:nth-child(even)  {
+          background-color: rgb(223, 48, 164);
+          border-bottom: 1px solid #ddd;
         }
         
-        th, td {
-          background-color: rgb(172, 211, 141);
-          padding : 15px;
-          padding-top: 10px;
-          padding-bottom: 20px;
-          padding-left: 30px;
-          padding-right: 40px;
-          border-spacing:30px;
-        }
         
+       td:nth-child(even), th:nth-child(even) {
+         background-color:rgb(143, 104, 214);
+       }
+
+       
         </style>
     <table style = "width:100%">
         <tr>
@@ -113,6 +116,21 @@ body
     <br>
     <table style = "width:50%">
         <caption>table 001</caption>
+        <tr>
+          <th>Email</th>
+          <th>Tobias</th>
+          <th>Linus</th>
+        </tr>
+        <tr>
+          <th>Email</th>
+          <th>Tobias</th>
+          <th>Linus</th>
+        </tr>
+        <tr>
+          <th>Email</th>
+          <th>Tobias</th>
+          <th>Linus</th>
+        </tr>
         <tr>
           <th>Email</th>
           <th>Tobias</th>
@@ -144,6 +162,8 @@ body
       <img src = "rowspan1.png" width = "500" height="333"><br>
       표에서 나타날 수 있는 테두리 스타일 <br>
       <img src = "border_style.PNG" ><br>
+
+      <br>td 가 tr 보다 더 큰 영향을 끼친다. 
 
       <table>
         <tr>
@@ -203,14 +223,36 @@ body
         <tr>
           <th>Month</th>
           <th>Savings</th>
+          <th>3</th>
+          <th>4</th>
+          <th>5</th>
+          <th>6</th>
+
         </tr>
         <tr>
           <td>January</td>
           <td>$100</td>
+          <td>$200</td>
+          <td>$300</td>
+          <td>$400</td>
+          <td>$500</td>
+
         </tr>
         <tr>
           <td>February</td>
           <td>$50</td>
+          <td>$60</td>
+          <td>$70</td>
+          <td>$80</td>
+          <td>$90</td>
+        </tr>
+        <tr>
+          <td>March</td>
+          <td>$150</td>
+          <td>$160</td>
+          <td>$170</td>
+          <td>$180</td>
+          <td>$910</td>
         </tr>
       </table>
       <hr  size = "5px" color = "black">
@@ -233,6 +275,34 @@ body
           <td>57</td>
           <td>Novel Writter</td>
         </tr>
+      </table>
+      <hr  size = "5px" color = "black">
+      <table>
+        <tr>
+          <th>Name</th>
+          <td>Jill</td>
+        </tr>
+        <tr>
+          <th rowspan="2">Phone</th>
+          <td>555-1234</td>
+        </tr>
+        <tr>
+          <td>555-8745</td>
+      </tr>
+      </table>
+      <hr  size = "5px" color = "black">
+      <table>
+        <tr>
+          <th>Name</th>
+          <td>Jill</td>
+        </tr>
+        <tr>
+          <th rowspan="2">Phone</th>
+          <td>555-1234</td>
+        </tr>
+        <tr>
+          <td>555-8745</td>
+      </tr>
       </table>
     </body>
     </html>

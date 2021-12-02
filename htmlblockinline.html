@@ -1,0 +1,147 @@
+<!Doctype html>
+
+<html>
+    <head>
+    <title>
+       HTML BLOCK & INLINE
+    </title>
+    <style>
+        .class1 {   
+            color : rgb(221, 13, 176);           
+        }
+        .class2 {
+            color : rgb(13, 105, 18);
+        }
+    </style>
+    
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <meta charset = "utf-8"> 
+    
+
+    </head>
+    <body>
+
+                    
+  <input type="button" value="night" onclick="
+  var target = document.querySelector('body');
+  if (this.value ==='night')  { 
+    target.style.backgroundColor = 'black';
+    target.style.color = 'white';
+    this.value = 'day';
+
+    var alist = document.querySelectorAll('a');
+    var i = 0;
+    while (i < alist.length) {
+      console.log(alist[i]);
+      alist[i].style.color = 'pink';
+      i = i + 1;
+    }
+  
+  } else {
+    target.style.backgroundColor = 'white';
+    target.style.color = 'black';
+    this.value = 'night';
+
+    var alist = document.querySelectorAll('a');
+    var i = 0;
+    while (i < alist.length) {
+      console.log(alist[i]);
+      alist[i].style.color = 'blue';
+      i = i + 1;
+      }
+    }  
+  ">
+      
+        <h1><a href = "life_index.html">WEB</h1>  
+            <ol>  
+                <li><a href = "1.html">HTML</a></li>
+                <li><a href = "2.html">CSS </a></li>
+                <li><a href = "3.html">JavaScript</a></li>
+                <li><a href = "4.html">Python Summary</a></li>
+                <li><a href = "htmltable.html">HTML TABLE 정리</a></li>
+                <li><a href = "htmllist.html">HTML LIST 정리</a></li>
+                <li><a href = "htmlblockinline.html">HTML BLOCK & INLINE 정리</a></li>
+                <li><a href = "htmlclasses.html">HTML CLASS ATTRIBUTE 정리</a></li>
+                <li><a href = "htmlid.html">HTML id Attribute</a></li>
+                <li><a href = "htmlbookmark.html">How to use HTML Bookmark</a></li>
+
+            </ol>
+
+            <h2>WELCOME TO BLOCK & INLINE</h2>
+
+            
+            <h3 style = "color:rgb(87, 206, 32)">Block - level Elements</h3>
+            
+            <div style = "border : 2px solid black">Hello World</div>
+
+            <p>A block-level element always starts on a new line.</p>
+            <p>A block-level element always takes up the full width available (stretches out to the left and right as far as it can).</p>
+            <p>A block level element has a top and a bottom margin, whereas an inline element does not.</p>
+
+            <hr  size = "5px" color = "chocolate">
+
+
+            <h3 style = "color:rgb(27, 65, 9)">Inline Elements</h3>
+
+            <span style = "border : 2px solid rgb(221, 43, 117)"> 'span' element is a block-level element. </span>
+            <p>An inline element does not start on a new line. 새로운 라인에서 시작</p>
+            <p>An inline element only takes up as much width as necessary. 필요한 길이만큼 인라인 요소 계속됨</p>
+            <p>This is a 'span' element inside a paragraph. 절 안의 'span'요소</p>
+
+            <hr  size = "5px" color = "chocolate">
+
+
+            <h3 style = "color:rgb(27, 65, 9)">The 'div' Elements</h3>
+
+            <div style = "border : 2px solid rgb(151, 37, 155)"> 'div' element is a block-level element. </div>
+            <p>The <div> element is often used as a container for other HTML elements. </p>  
+            <p>The <div> element has no required attributes, but style, class and id are common. </p>  
+            <p>When used together with CSS, the <div> element can be used to style blocks of content:</p>  
+
+            <div style="background-color:rgb(0, 0, 0);color:white;padding:20px;">
+                <h2>London</h2>
+                <p>London is the capital city of England. It is the most populous city in the United Kingdom, </p>
+                <p></p>with a metropolitan area of over 13 million inhabitants.</p>
+                <p>Standing on the River Thames, London has been a major settlement for two millennia, </p>
+                <p></p>its history going back to its founding by the Romans, who named it Londinium.</p>
+              </div> 
+
+              <hr  size = "5px" color = "chocolate">
+            
+            <h3 style = "color:rgb(27, 65, 9)">The 'span' Elements</h3>
+            
+            <p>The <span> element is an inline container used to mark up a part of a text, or a part of a document.</p>
+            <p> The <span> element has no required attributes, but style, class and id are common.</p>
+            <p>When used together with CSS, the <span> element can be used to style parts of the text:</p>   
+             
+            
+            <p>My mother has <span style="color:blue;font-weight:bold">blue eyes </span>and my father has 
+            <span style="color:darkolivegreen;font-weight:bold">dark green eyes.</span></p>
+                
+            <h2>Using The id Attribute in JavaScript</h2>
+            <p>JavaScript can access an element with a specified id by using the getElementById() method:</p>     
+
+            <h1 id="myHeader">Hello World!</h1>
+            <button onclick="displayResult()">Change text</button>
+            
+            <script>
+                function displayResult() {
+                  document.getElementById("myHeader").innerHTML = "Have a nice day!";
+                }
+            </script>
+                
+
+            <h1>Chapter Summary</h1>
+            <ul>
+                <li>The <code class="class1">id</code> attribute is used to specify a unique id for an HTML element</li>
+                <li>The value of the <code class="class1">id</code> attribute must be unique within the HTML document</li>
+                <li>The <code class="class1">id</code> attribute is used by CSS and JavaScript to style/select a specific element</li>
+                <li>The value of the <code class="class1">id</code> attribute is case sensitive</li>
+                <li>The <code class="class1">id</code> attribute is also used to create HTML bookmarks</li>
+                <li>JavaScript can access an element with a specific <code class="class1">id</code> with the 
+                    <code class = "class2">getElementById()</code>  method</li>
+
+            </ul>
+
+        </body>
+</html>

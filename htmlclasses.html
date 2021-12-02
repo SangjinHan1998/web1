@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML CLASSES</title>
+        <style>
+            .city   {
+                background-color: teal;
+                color : white;
+                border : 2px solid black;
+                margin : 20px;
+                padding : 20px;
+
+            }
+
+            .note   {
+                font-size : 120%;
+                color : gray;
+            }
+
+            .class1 {
+                background-color: tomato;
+                color : navy;
+                border: 4px solid navy;
+                margin : 10px;
+                padding : 10px;
+            }
+
+            .main   {
+                text-align : center;
+            }
+        </style>
+    </head>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <meta charset = "utf-8"> 
+    <body>
+  <h1><a href = "life_index.html">WEB</h1>  
+    <ol>  
+        <li><a href = "1.html">HTML</a></li>
+        <li><a href = "2.html">CSS </a></li>
+        <li><a href = "3.html">JavaScript</a></li>
+        <li><a href = "4.html">Python Summary</a></li>
+        <li><a href = "htmltable.html">HTML TABLE 정리</a></li>
+        <li><a href = "htmllist.html">HTML LIST 정리</a></li>
+        <li><a href = "htmlblockinline.html">HTML BLOCK & INLINE 정리</a></li>
+        <li><a href = "htmlclasses.html">HTML CLASS ATTRIBUTE 정리</a></li>
+        <li><a href = "htmlid.html">HTML id Attribute</a></li>
+        <li><a href = "htmlbookmark.html">How to use HTML Bookmark</a></li>
+        <li><a href = "htmliframes.html">How to use HTML iframes</a></li>
+
+    </ol>
+
+    <h2>WELCOME TO HTML CLASS</h2>
+    
+    <p>The HTML class attribute is used to specify a class for an HTML element. Multiple HTML elements can share the same class.</p>
+
+    <div class = "city">
+        <h2>Berlin</h2>
+        <p>Berlin is the capital of Germany</p>
+    </div>
+    
+    <div class = "city">
+        <h2>London</h2>
+        <p>London is the capital of England</p>
+    </div>
+
+    <div class = "city">
+        <h2>Warsaw</h2>
+        <p>Warsaw is the capital of Poland</p>
+    </div>
+
+    <hr  size = "5px" color = "chocolate">
+
+    <h2>My <span class="note">Important</span> Heading</h2>
+    <p>This is some <span class="note">important</span> text.</p>
+
+    <div class = "class1">
+        <p>Tip: The class attribute can be used on any HTML element.</p>
+        <p>Note: The class name is case sensitive!</p>
+        <p>Tip: You can learn much more about CSS in our CSS Tutorial.</p>
+
+    </div>
+
+    
+        <p>Tip: The class <div class = "class1">attribute can be used </div>on any HTML element.</p>
+        <p>Note: The class name is case sensitive!</p>
+        <p>Tip: You can learn much more about CSS in our CSS Tutorial.</p>
+
+    </div>
+
+    <h2>The Syntax For Class </h2>
+    <h3>Multiple Classes</h3>
+    <p>To create a class; write a period (.) character, followed by a class name. Then, define the CSS properties within curly braces {}:    </p>
+    <h2 class="class1 main">London</h2>
+    <h2 class="class1">Paris</h2>
+    <h2 class="class1">Tokyo</h2>
+
+    <hr  size = "5px" color = "chocolate">
+
+    <h2>Different Elements Can Share Same Class</h2>
+    <p>Different HTML elements can point to the same class name. In the following example, </p>
+    <p>both 'h2' and 'p'points to the "city" class and will share the same style:</p>
+
+    <div class = "city">Seoul</div>
+    <p class = "city">Seoul is the capital of South Korea</p>
+
+    <hr  size = "5px" color = "chocolate">
+
+    <h2>Use of The class Attribute in JavaScript</h2>
+    <p>The class name can also be used by JavaScript to perform certain tasks for specific elements.
+    JavaScript can access elements with a specific class name with the getElementsByClassName() method:</p>
+
+    <button onclick="myFunction()"  >Hide elements</button>
+
+    <script>
+        function myFunction() {
+          var x = document.getElementsByClassName("city");
+          for (var i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+          }
+        }
+        </script>
+        
+</body>
+</html>
