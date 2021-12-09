@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <title></title>
+    <head>
+
+    </head>
+<body>
+    <h1 id = "container">
+        <center>
+            Basic
+        </center>
+    </h1>
+<h1><a href = "life_index.html">WEB</h1>  
+    <ol>  
+        <li><a href = "1.html">HTML</a></li>
+        <li><a href = "2.html">CSS </a></li>
+        <li><a href = "3.html">JavaScript</a></li>
+        <li><a href = "4.html">Python Summary</a></li>
+        <li><a href = "htmltable.html">HTML TABLE 정리</a></li>
+        <li><a href = "htmllist.html">HTML LIST 정리</a></li>
+        <li><a href = "htmlblockinline.html">HTML BLOCK & INLINE 정리</a></li>
+        <li><a href = "htmlclasses.html">HTML CLASS ATTRIBUTE 정리</a></li>
+        <li><a href = "htmlid.html">HTML id Attribute</a></li>
+        <li><a href = "htmlbookmark.html">How to use HTML Bookmark</a></li>
+        <li><a href = "htmliframes.html">How to use HTML iframes</a></li>
+        <li><a href = "htmljavascript.html">How to use HTML JavaScript</a></li>
+        <li><a href = "htmlfilepaths.html">How to use File Paths</a></li>
+    </ol>
+
+        <h1>My First JavaScript</h1>
+        <button type = "button" 
+        onclick = "document.getElementById('demo').innerHTML = Date()">
+        Click me to displate Date and Time.
+        </button>
+        <p id = "demo"></p>
+
+        <script>
+            document.getElementById("demo").innerHTML = "Hello JavaScript!";
+        </script> 
+
+        <p>JavaScript can change the content of an HTML element:</p>
+
+        <button type = "button" onclick = "myFunction()">Click Me!</button>
+
+        <p id = "demo1">This is a demonstration.</p>
+
+        <script>
+            function myFunction()   {
+                document.getElementById("demo1").innerHTML = "Hello JavaScript";
+            }
+        </script>
+
+        <button type = "button" onclick = "myFunction1()">Click to change Design!</button>
+
+        <p id = "demo2">JavaScript can change the style of an HTML element.</p>
+
+        <script>
+            function myFunction1()   {
+                document.getElementById("demo2").style.fontSize = "25px";
+                document.getElementById("demo2").style.color = "brown";
+                document.getElementById("demo2").style.backgroundColor = "green"
+            }
+
+        </script>
+
+        <p>Here, a JavaScript changes the value of the src (source) attribute of an image.</p>
+        
+        <script>
+            function light(sw)  {
+            var pic;
+            if (sw == 0)    {
+                pic = "pic_bulboff.gif"
+            } else  {
+                pic = "pic_bulbon.gif"
+            }       
+                document.getElementById('myImage').src = pic;
+            }
+        </script>
+
+        <img id = "myImage" src = "pic_bulboff.gif" width = "100" height = "180">
+        <p>
+            <button type = "button" onclick = "light(1)">Light On</button>
+            <button type = "button" onclick = "light(0)">Light Off</button>
+
+        </p>
+
+        <script>
+            function good(sw)  {
+            var pic;
+            if (sw == 0)    {
+                pic = "happy.png"
+            } else  {
+                pic = "unhappy.png"
+            }       
+                document.getElementById('myImage1').src = pic;
+            }
+        </script>
+
+        <img id = "myImage1" src = "happy.png" width = "100" height = "100">
+        <p>
+            <button type = "button" onclick = "good(1)">Angry</button>
+            <button type = "button" onclick = "good(0)">Happy</button>
+
+        </p>
+
+        
+    </body>
+    </ol>
+    </html>
