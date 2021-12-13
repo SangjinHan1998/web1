@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+    <title></title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <head>
+        <style>
+            *{
+            box-sizing: border-box;
+            }
+                .left   {
+                    background-color: aqua;
+                    padding: 20px;
+                    float: left;
+                    width: 20%; /* The width is 20%, by default */
+                }
+
+                .main   {
+                    background-color: rgb(184, 85, 29);
+                    padding: 20px;
+                    float: left;
+                    width: 60%; /* The width is 60%, by default */
+                }
+
+                .right   {
+                    background-color: rgb(161, 69, 161);
+                    padding: 20px;
+                    float: left;
+                    width: 20%; /* The width is 20%, by default */
+                }
+
+                .menu   {
+                    float : left;
+                    width: 20%;
+                    text-align: center;
+                }
+
+                .menu_a {   /* 왼쪽 사이드바 */
+                    background-color: rgb(23, 116, 179);
+                    padding: 20px;
+                    float: left;
+                    width: 20%;
+                }
+
+                .main_1   {   /* 가운데 텍스트 내용 */ 
+                    background-color: rgb(155, 248, 5);
+                    padding: 20px;
+                    float: left;
+                    width: 60%; /* The width is 60%, by default */
+                    text-color: rgb(5, 1, 15);
+                }
+
+                .right_1   {    /* 오른쪽 사이드바 */
+                    background-color: rgb(165, 8, 165);
+                    padding: 20px;
+                    float: left;
+                    width: 20%; /* The width is 20%, by default */
+                }
+
+
+                /* Use a media query to add a breakpoint at 800px; */ 
+                @media screen and (max-width: 800px)    {
+                    .left, .main, .right{
+                        width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+                    }
+                }
+            
+                .attr1  {
+                    background-color: rgb(17, 235, 28);
+                    color: white;
+                    padding: 10px;
+        
+                }
+
+                .attr1_1  {
+                    background-color: rgb(2, 210, 247);
+                    color: rgb(7, 2, 2);
+                    padding: 20px;
+        
+                }
+        
+                .attr2  {
+                    background-color: gray;
+                    color: rgb(163, 1, 1);
+                    padding: 10px;
+        
+                }
+        
+                table, th, td {
+                    border:4px solid rgb(129, 107, 45);
+                    border-collapse: collapse;
+                    padding : 30px;
+                  }
+           
+        </style>
+    <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+    </head>
+<body>
+
+    <input type="button" value="night" onclick="
+    var target = document.querySelector('body');
+    if (this.value ==='night')  { 
+      target.style.backgroundColor = 'black';
+      target.style.color = 'white';
+      this.value = 'day';
+  
+      var alist = document.querySelectorAll('a');
+      var i = 0;
+      while (i < alist.length) {
+        console.log(alist[i]);
+        alist[i].style.color = 'pink';
+        i = i + 1;
+      }
+    
+    } else {
+      target.style.backgroundColor = 'white';
+      target.style.color = 'black';
+      this.value = 'night';
+  
+      var alist = document.querySelectorAll('a');
+      var i = 0;
+      while (i < alist.length) {
+        console.log(alist[i]);
+        alist[i].style.color = 'blue';
+        i = i + 1;
+        }
+      }  
+    ">        
+<h1 class ="attr1">
+    <center>
+        w3school output
+    </center>
+</h1>
+    
+<h1 class ="attr2"><a href = "life_index.html">WEB</a></h1> 
+    <table style = "width:100%">
+        <tr>
+            <th style ="width:33%">
+                <li><a href = "1.html">HTML</a></li>
+                <li><a href = "2.html">CSS </a></li>
+                <li><a href = "3.html">JavaScript</a></li>
+                <li><a href = "4.html">Python Summary</a></li>
+                <li><a href = "htmltable.html">HTML TABLE 정리</a></li>
+                <li><a href = "htmllist.html">HTML LIST 정리</a></li>
+                <li><a href = "htmlblockinline.html">HTML BLOCK & INLINE 정리</a></li>
+                <li><a href = "htmlclasses.html">HTML CLASS ATTRIBUTE 정리</a></li>
+                <li><a href = "htmlid.html">HTML id Attribute</a></li>
+               <li> <a href = "htmlbookmark.html">How to use HTML Bookmark</a></li>
+            </th>
+            <th style ="width:33%">
+                <li><a href = "htmliframes.html">How to use HTML iframes</a></li>
+                <li><a href = "htmljavascript.html">How to use HTML JavaScript</a></li>
+                <li><a href = "htmlfilepaths.html">How to use File Paths</a></li>
+                <li><a href = "htmltheheadelement.html">How to use Head</a></li>
+                <li><a href = "htmlresponsive.html">What is Responsive Web Design</a></li>                
+                <li><a href = "htmlExbootstrap.html">Bootstrap Example</a></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+
+                
+            </th>
+            <th style ="width:33%">
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+                <li>7</li>
+                <li>8</li>
+                <li>9</li>
+                <li>10</li>
+
+
+                
+            </th>
+        </tr>
+    </table> 
+
+    <h2>Setting the Viewport</h2>
+    <p>This example does not really do anything.</p>
+    <p>other than showing you how to add the viewport meta element.</p>
+
+    <h2>Responsive Image</h2>
+    <p>When the CSS width property is set in a percentage value, </p>
+    <p>the image will scale up and down when resizing the browser window. </p>
+    <p>Resize the browser window to see the effect.</p>
+
+    <img src = "picture1.jpg" style = "width:100%;"">
+
+    <h2>Show Different Images Depending on Browser Width</h2>
+    <p>Resize the browser width and the image will change at 600px and 1500px.</p>
+
+    <picture>
+        <source srcset = "responsive1.jpg" media = "(max-width : 600px)">
+        <source srcset = "responsive2.jpg" media = "(max-width:1500px)">
+        <source srcset = "responsive3.jpg">
+        <img src = "responsive2.jpg" alt = "Flowers" style="width:auto;">
+    </picture>
+
+    <hr size = "2px" color = "purple" >
+    <h2>Responsive Text Size </h2>
+    <p>The text size can be set with a "vw" unit, which means the "viewport width".</p>
+    <p>That way the text size will follw the size of the browser window:</p>
+
+    <h1 style = "font-size : 10vw"> Responsive Text</h1>
+
+    <p style = "font-size : 5vw;">Resize the browser window to see how the text size scales. </p>
+
+    <p class = "attr1_1"> 1vw = 1 % of viewport width. If the viewport is 50cm wide, 1vw is 0.5cm.</p>
+
+    <h2>Media Queries</h2>
+    <p>Resize the browser window.</p>
+
+    <p>Make sure you reach the gbreakpoint at 8090px when resizing this frame.</p>
+
+    <center>
+    <div class = "left">
+        <p>Left Menu</p>
+    </div>
+    
+    <div class = "main">
+        <p>Main Content</p>
+    </div>
+
+    <div class = "right">
+        <p>Right Menu</p>
+    </div>
+    </center>
+    
+    <hr size = "5px" color = "purple" >
+    <br>
+    <h2>Responsive Web Page - Full Example</h2>
+    <p>A responsive web page should look good on large desktop screens and on small mobile phones.</p>
+
+    <hr size = "2px" color = "purple" >
+
+    </body>
+ 
+    <body style = "font-family:Verdana; color:rgb(0, 0, 0)">
+
+    <div style = "background-color: gray; padding: 20px; text-align: center">
+        <h1>Hello World</h1>
+    </div>
+
+    <hr size = "2px" color = "purple" >
+
+    <div style = "overflow:auto">
+        <div class = "menu_a">
+          <a href = "#">Link 1</a><br>
+          <a href = "#">Link 2</a><br>
+          <a href = "#">Link 3</a><br>
+          <a href = "#">Link 4</a><br>
+        </div>
+
+        <div class = "main_1">
+            <h2>Full Example</h2>
+            <p>Responsive Full Example</p>
+        </div>
+
+        <div class = "right_1">
+            <h2>About</h2>
+            <p>Exercise every day.</p>
+            <p>Repeat and repeat to be a Web Designer</p>
+        </div>
+    </div>
+
+    <div style = "background-color: gray; text-align:center;padding  : 10px; margin-top:7px;">
+        © copyright w3schools.com</div>
+    
+    <br><br>
+    <hr size = "2px" color = "purple" >
+    <h2>W3.CSS</h2>
+    <p>W3.CSS is designed to be a high quality alternative to Bootstrap.</p>
+    <p>W3.CSS is designed to be independent of jQuery or any other JavaScript library.</p>
+
+        
+
+    </body>
+
+    </html>
+

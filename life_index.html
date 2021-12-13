@@ -1,40 +1,120 @@
 <!DOCTYPE html>
 <html>
 
-<head>
 <title> WEB1 -  Welcome </title>
 <!--  add  favicon  -->
 <link rel="icon" type="image/x-icon" href="favicon.ico">
-</head>
-
-<UL>
-    <li><h2>MUST DO IT!!!</h2></li>  
-</UL>
-<style>
-body 
-  {
-    background-color: rgb(215, 231, 186);
-  }
-</style>  
-
+    <head>
+        <style>
+            
+                .attr1  {
+                    background-color: rgb(17, 235, 28);
+                    color: white;
+                    padding: 10px;
+        
+                }
+        
+                .attr2  {
+                    background-color: gray;
+                    color: rgb(163, 1, 1);
+                    padding: 10px;
+        
+                }
+        
+                table, th, td {
+                    border:4px solid rgb(129, 107, 45);
+                    border-collapse: collapse;
+                    padding : 30px;
+                  }
+           
+        </style>
+    </head>
 <body>
-    
-    <h1><a href = "life_index.html">WEB</h1></h1>    
-    <ol>  
-        <li><a href = "1.html">HTML</a></li>
-        <li><a href = "2.html">CSS </a></li>
-        <li><a href = "3.html">JavaScript</a></li>
-        <li><a href = "4.html">Python Summary</a></li>
-        <li><a href = "htmltable.html">HTML TABLE 정리</a></li>
-        <li><a href = "htmllist.html">HTML LIST 정리</a></li>
-        <li><a href = "htmlblockinline.html">HTML BLOCK & INLINE 정리</a></li>
-        <li><a href = "htmlclasses.html">HTML CLASS ATTRIBUTE 정리</a></li>
-        <li><a href = "htmlid.html">HTML id Attribute</a></li>
-        <li><a href = "htmlbookmark.html">How to use HTML Bookmark</a></li>
-        <li><a href = "htmliframes.html">How to use HTML iframes</a></li>
-        <li><a href = "htmljavascript.html">How to use HTML JavaScript</a></li>
 
-    </ol>
+    <input type="button" value="night" onclick="
+    var target = document.querySelector('body');
+    if (this.value ==='night')  { 
+      target.style.backgroundColor = '#4A4F5A';
+      target.style.color = 'white';
+      this.value = 'day';
+  
+      var alist = document.querySelectorAll('a');
+      var i = 0;
+      while (i < alist.length) {
+        console.log(alist[i]);
+        alist[i].style.color = 'pink';
+        i = i + 1;
+      }
+    
+    } else {
+      target.style.backgroundColor = 'white';
+      target.style.color = 'black';
+      this.value = 'night';
+  
+      var alist = document.querySelectorAll('a');
+      var i = 0;
+      while (i < alist.length) {
+        console.log(alist[i]);
+        alist[i].style.color = 'blue';
+        i = i + 1;
+        }
+      }  
+    ">
+<h1 class ="attr1">
+    <center>
+        w3school output
+    </center>
+</h1>
+
+
+    
+<h1 class ="attr2"><a href = "life_index.html">WEB</a></h1> 
+    <table style = "width:100%">
+        <tr>
+            <th style ="width:33%">
+                <li><a href = "1.html">HTML</a></li>
+                <li><a href = "2.html">CSS </a></li>
+                <li><a href = "3.html">JavaScript</a></li>
+                <li><a href = "4.html">Python Summary</a></li>
+                <li><a href = "htmltable.html">HTML TABLE 정리</a></li>
+                <li><a href = "htmllist.html">HTML LIST 정리</a></li>
+                <li><a href = "htmlblockinline.html">HTML BLOCK & INLINE 정리</a></li>
+                <li><a href = "htmlclasses.html">HTML CLASS ATTRIBUTE 정리</a></li>
+                <li><a href = "htmlid.html">HTML id Attribute</a></li>
+               <li> <a href = "htmlbookmark.html">How to use HTML Bookmark</a></li>
+            </th>
+            <th style ="width:33%">
+                <li><a href = "htmliframes.html">How to use HTML iframes</a></li>
+                <li><a href = "htmljavascript.html">How to use HTML JavaScript</a></li>
+                <li><a href = "htmlfilepaths.html">How to use File Paths</a></li>
+                <li><a href = "htmltheheadelement.html">How to use Head</a></li>
+                <li><a href = "htmlresponsive.html">What is Responsive Web Design</a></li>
+                <li><a href = "htmlExbootstrap.html">Bootstrap Example</a></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+
+                
+            </th>
+            <th style ="width:33%">
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+                <li>7</li>
+                <li>8</li>
+                <li>9</li>
+                <li>10</li>
+
+
+                
+            </th>
+        </tr>
+    </table> 
+
     <h2>WELCOME TO WEB</h2>
     <p>
         월드 와이드 웹(World Wide Web, WWW, W3)은 
@@ -78,234 +158,6 @@ body
     </script>
     <!--End of Tawk.to Script-->
 
-    <h3> HTML TABLE </h3>
-    <style>
-        table, th, td {
-          border:2px solid rgb(0, 0, 0);
-          border-collapse: collapse;
-        }
-        tr:nth-child(even)  {
-          background-color: rgb(223, 48, 164);
-          border-bottom: 1px solid #ddd;
-        }
-        
-        
-       td:nth-child(even), th:nth-child(even) {
-         background-color:rgb(143, 104, 214);
-       }
-
-       
-        </style>
-    <table style = "width:100%">
-        <tr>
-            <th style="width:10%">company</th>
-            <th style="width:80%">contact</th>
-            <th style="width:10%">color</th>
-        </tr>
-        <tr>
-            <td>Alfreds Futterkiste</td>
-            <td>Maria Anders</td>
-            <td>Germany</td>
-          </tr>
-          <tr>
-            <td>Centro comercial Moctezuma</td>
-            <td>Francisco Chang</td>
-            <td>Mexico</td>
-          </tr>
-    </table>
-
-    <br><p>To undestand the example better, we have added borders to the table.</p>
-
-    <br>
-    <table style = "width:50%">
-        <caption>table 001</caption>
-        <tr>
-          <th>Email</th>
-          <th>Tobias</th>
-          <th>Linus</th>
-        </tr>
-        <tr>
-          <th>Email</th>
-          <th>Tobias</th>
-          <th>Linus</th>
-        </tr>
-        <tr>
-          <th>Email</th>
-          <th>Tobias</th>
-          <th>Linus</th>
-        </tr>
-        <tr>
-          <th>Email</th>
-          <th>Tobias</th>
-          <th>Linus</th>
-        </tr>
-        <tr style="height:200px">
-          <td>16</td>
-          <td>14</td>
-          <td>10</td>
-        </tr>
-      </table>
-
-      <table style = "width:50%">
-        <caption>table 001</caption>
-        <tr>
-          <th colspan="2">Emil</td> 
-          <td>Tobias</td>
-          <td>Linus</td>
-        </tr>
-        <tr>
-          <td>16</td>
-          <td>14</td>
-          <td>10</td>
-        </tr>
-      </table>  
-      <br> colspan 은 세로(열)의 셀을  가로열로 합치는것 column --> 열<br>
-      <img src = "colspan1.png" width = "500" height="333"><br>
-      rowspan은 가로(행)의 셀을 세로열로 합치는 것  row --> 행<br>
-      <img src = "rowspan1.png" width = "500" height="333"><br>
-      표에서 나타날 수 있는 테두리 스타일 <br>
-      <img src = "border_style.PNG" ><br>
-
-      <br>td 가 tr 보다 더 큰 영향을 끼친다. 
-
-      <table>
-        <tr>
-          <th>Firstname</th>
-          <th>Lastname</th>
-          <th>Age</th>
-        </tr>
-        <tr>
-          <td>Jill</td>
-          <td>Smith</td>
-          <td>50</td>
-        </tr>
-        <tr>
-          <td>Eve</td>
-          <td>Jackson</td>
-          <td>94</td>
-        </tr>
-      </table>
-      <br>- - - - - - - - - -
-      <table>
-        <tr>
-          <th>Firstname</th>
-          <td>WHITE</td>
-          <td>MUSE</td>
-        </tr>
-        <tr>
-          <th>Lastname</th>
-          <td>Vocabrary</td>
-          <td>perfume</td>
-        </tr>
-        <tr>
-          <th>Age</th>
-          <td>94</td>
-          <td>50</td>
-        </tr>
-      </table>
-      <hr  size = "5px" color = "black" >      
-      <table>
-        <tr>
-          <th colspan="2">Name</th>
-          <th>Age</th>
-        </tr>
-        <tr>
-          <td>Jill</td>
-          <td>Smith</td>
-          <td>50</td>
-        </tr>
-        <tr>
-          <td>Eve</td>
-          <td>Jackson</td>
-          <td>94</td>
-        </tr>
-      </table>
-      <hr  size = "5px" color = "black">
-      <table style="width:100%">
-        <caption>Monthly savings</caption>
-        <tr>
-          <th>Month</th>
-          <th>Savings</th>
-          <th>3</th>
-          <th>4</th>
-          <th>5</th>
-          <th>6</th>
-
-        </tr>
-        <tr>
-          <td>January</td>
-          <td>$100</td>
-          <td>$200</td>
-          <td>$300</td>
-          <td>$400</td>
-          <td>$500</td>
-
-        </tr>
-        <tr>
-          <td>February</td>
-          <td>$50</td>
-          <td>$60</td>
-          <td>$70</td>
-          <td>$80</td>
-          <td>$90</td>
-        </tr>
-        <tr>
-          <td>March</td>
-          <td>$150</td>
-          <td>$160</td>
-          <td>$170</td>
-          <td>$180</td>
-          <td>$910</td>
-        </tr>
-      </table>
-      <hr  size = "5px" color = "black">
-      <h3 style = "color:rgb(42, 161, 230)">HTML TABLE PADDING & SPACING</h3>
-      <table>
-        <tr>
-          <th colspan="2">Name</th>
-          <th>Age</th>
-          <th>Job</th>
-        </tr>
-        <tr>
-          <td>Jill</td>
-          <td>Smith</td>
-          <td>43</td>
-          <td>Taxi driver</td>
-        </tr>
-        <tr>
-          <td>Eve</td>
-          <td>Jackson</td>
-          <td>57</td>
-          <td>Novel Writter</td>
-        </tr>
-      </table>
-      <hr  size = "5px" color = "black">
-      <table>
-        <tr>
-          <th>Name</th>
-          <td>Jill</td>
-        </tr>
-        <tr>
-          <th rowspan="2">Phone</th>
-          <td>555-1234</td>
-        </tr>
-        <tr>
-          <td>555-8745</td>
-      </tr>
-      </table>
-      <hr  size = "5px" color = "black">
-      <table>
-        <tr>
-          <th>Name</th>
-          <td>Jill</td>
-        </tr>
-        <tr>
-          <th rowspan="2">Phone</th>
-          <td>555-1234</td>
-        </tr>
-        <tr>
-          <td>555-8745</td>
-      </tr>
-      </table>
+    
     </body>
     </html>

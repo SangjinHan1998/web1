@@ -1,47 +1,36 @@
-<!Doctype html>
-
+<!DOCTYPE html>
 <html>
     <head>
-    <title>
-        HTML ID
-    </title>
-
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name = "viewport" content="width=device-width, initial-scale = 1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
     <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <head>
+    
         <style>
-            #myHeader1   {
-                background-color: lightblue;
-                color : black;
-                padding : 40px;
-                text-align: center;
-            }
-        
-            .city {
-                background-color: tomato;
-                color: white;
-                padding: 10px;
-              }
-          
             
-            .attr1  {
-                background-color: rgb(17, 235, 28);
-                color: white;
-                padding: 10px;
-    
-            }
-    
-            .attr2  {
-                background-color: gray;
-                color: rgb(163, 1, 1);
-                padding: 10px;
-    
-            }
-    
-            table, th, td {
-                border:4px solid rgb(129, 107, 45);
-                border-collapse: collapse;
-                padding : 30px;
-               }
+                .attr1  {
+                    background-color: rgb(17, 235, 28);
+                    color: white;
+                    padding: 10px;
+        
+                }
+        
+                .attr2  {
+                    background-color: gray;
+                    color: rgb(163, 1, 1);
+                    padding: 10px;
+        
+                }
+        
+                table, th, td {
+                    border:4px solid rgb(129, 107, 45);
+                    border-collapse: collapse;
+                    padding : 30px;
+                  }
            
         </style>
     </head>
@@ -50,7 +39,7 @@
     <input type="button" value="night" onclick="
     var target = document.querySelector('body');
     if (this.value ==='night')  { 
-      target.style.backgroundColor = '#4A4F5A';
+      target.style.backgroundColor = 'black';
       target.style.color = 'white';
       this.value = 'day';
   
@@ -76,13 +65,12 @@
         }
       }  
     ">
+
 <h1 class ="attr1">
     <center>
         w3school output
     </center>
 </h1>
-
-
     
 <h1 class ="attr2"><a href = "life_index.html">WEB</a></h1> 
     <table style = "width:100%">
@@ -130,28 +118,36 @@
             </th>
         </tr>
     </table> 
-            
-    <h2> HTML BOOKMARK</h2>
-    <h2 id="C4">Chapter 4</h2>
-            
-    <h3>Using The id Attribute    </h3>            
-    <p id = "myHeader1">The id attribute specifies a unique id for an HTML element. </p>
-    <p>The value of the id attribute must be unique within the HTML document.</p>
-    <p>You cannot have more than one element with the same id in an HTML document.</p>
-    </body>
-
-    <h3 id = "myHeader1">My Header</h3>
-
-    <h3 class="city">London</h3>
-    <p>London is the capital of England.</p>
-
-    <h3 class="city">Paris</h3>
-    <p>Paris is the capital of France.</p>
-
-    <h3 class="city">Tokyo</h3>
-    <p>Tokyo is the capital of Japan.</p>
-
     
+    <div class = "container">
+        <div class = "jumbotron">
+            <h1>My First Bootstrap Page</h1>
+            <p>Resize this responsive page to see the effect!</p>
+        </div>
+        <div class = "col-sm-4">
+            <h3>Column 1</h3>
+            <p>jQuery는 HTML 속 클라이언트 사이드 스크립트 언어를 단순화하도록 설계된 </p>
+            <p> 브라우저 호환성이 있는 JavaScript 라이브러리이다. 존 레식에 의해 </p>
+            <p>2006년 뉴욕 시 바캠프(Barcamp NYC)에서 공식적으로 소개되었다.</p>
+        </div>
+        <div class = "col-sm-4">
+            <h3>Column 2</h3>
+            <p>모질라 재단의 프로토타입 기반의 프로그래밍 언어로, 스크립트 언어에 해당된다.</p>
+            <p>웹 페이지를 자동차에 비유하자면, HTML은 자동차의 뼈대, CSS는 자동차의 외관, </p>
+            <p>JavaScript는 자동차의 동력이라고 볼 수 있다.</p>
+        </div>
+        <div class = "col-sm-4">
+            <h3>Column 3</h3>
+            <p>Python은 1991년에 발표된 인터프리터 방식의 프로그래밍 언어다.</p>
+            <p>영어와 비슷해서 읽고 쓰기 쉬운 특유의 문법과 </p>
+            <p>업무 시간을 단축해 주는 언어로 활용할 수 있다.</p>
+        </div>
 
+    </div>
 
-</html>    
+  
+
+   
+    </body>
+    
+    </html>

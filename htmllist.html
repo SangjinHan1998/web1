@@ -1,13 +1,75 @@
 <!DOCTYPE html>
 <html>
     <title>HTML LISTs</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
     <head>
-     
+        <style>
+            
+                .attr1  {
+                    background-color: rgb(17, 235, 28);
+                    color: white;
+                    padding: 10px;
+        
+                }
+        
+                .attr2  {
+                    background-color: gray;
+                    color: rgb(163, 1, 1);
+                    padding: 10px;
+        
+                }
+        
+                table, th, td {
+                    border:4px solid rgb(129, 107, 45);
+                    border-collapse: collapse;
+                    padding : 30px;
+                  }
+           
+        </style>
     </head>
-    <body>
+<body>
 
-        <h1><a href = "life_index.html">WEB</h1></h1>    
-            <ol>  
+    <input type="button" value="night" onclick="
+    var target = document.querySelector('body');
+    if (this.value ==='night')  { 
+      target.style.backgroundColor = '#4A4F5A';
+      target.style.color = 'white';
+      this.value = 'day';
+  
+      var alist = document.querySelectorAll('a');
+      var i = 0;
+      while (i < alist.length) {
+        console.log(alist[i]);
+        alist[i].style.color = 'pink';
+        i = i + 1;
+      }
+    
+    } else {
+      target.style.backgroundColor = 'white';
+      target.style.color = 'black';
+      this.value = 'night';
+  
+      var alist = document.querySelectorAll('a');
+      var i = 0;
+      while (i < alist.length) {
+        console.log(alist[i]);
+        alist[i].style.color = 'blue';
+        i = i + 1;
+        }
+      }  
+    ">
+<h1 class ="attr1">
+    <center>
+        w3school output
+    </center>
+</h1>
+
+
+    
+<h1 class ="attr2"><a href = "life_index.html">WEB</a></h1> 
+    <table style = "width:100%">
+        <tr>
+            <th style ="width:33%">
                 <li><a href = "1.html">HTML</a></li>
                 <li><a href = "2.html">CSS </a></li>
                 <li><a href = "3.html">JavaScript</a></li>
@@ -17,12 +79,40 @@
                 <li><a href = "htmlblockinline.html">HTML BLOCK & INLINE 정리</a></li>
                 <li><a href = "htmlclasses.html">HTML CLASS ATTRIBUTE 정리</a></li>
                 <li><a href = "htmlid.html">HTML id Attribute</a></li>
-                <li><a href = "htmlbookmark.html">How to use HTML Bookmark</a></li>
+               <li> <a href = "htmlbookmark.html">How to use HTML Bookmark</a></li>
+            </th>
+            <th style ="width:33%">
+                <li><a href = "htmliframes.html">How to use HTML iframes</a></li>
                 <li><a href = "htmljavascript.html">How to use HTML JavaScript</a></li>
                 <li><a href = "htmlfilepaths.html">How to use File Paths</a></li>
+                <li><a href = "htmltheheadelement.html">How to use Head</a></li>
+                <li><a href = "htmlresponsive.html">What is Responsive Web Design</a></li>
+                <li><a href = "htmlExbootstrap.html">Bootstrap Example</a></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+
+                
+            </th>
+            <th style ="width:33%">
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+                <li>7</li>
+                <li>8</li>
+                <li>9</li>
+                <li>10</li>
 
 
-            </ol>
+                
+            </th>
+        </tr>
+    </table> 
+
         
         <h2>Welcome to HTML List</h2>
 

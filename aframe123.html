@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-    <title></title>
+    <title>example frame</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <head>
         <style>
@@ -28,11 +28,43 @@
         </style>
     </head>
 <body>
+
+    <input type="button" value="night" onclick="
+    var target = document.querySelector('body');
+    if (this.value ==='night')  { 
+      target.style.backgroundColor = '#4A4F5A';
+      target.style.color = 'white';
+      this.value = 'day';
+  
+      var alist = document.querySelectorAll('a');
+      var i = 0;
+      while (i < alist.length) {
+        console.log(alist[i]);
+        alist[i].style.color = 'pink';
+        i = i + 1;
+      }
+    
+    } else {
+      target.style.backgroundColor = 'white';
+      target.style.color = 'black';
+      this.value = 'night';
+  
+      var alist = document.querySelectorAll('a');
+      var i = 0;
+      while (i < alist.length) {
+        console.log(alist[i]);
+        alist[i].style.color = 'blue';
+        i = i + 1;
+        }
+      }  
+    ">
 <h1 class ="attr1">
     <center>
         w3school output
     </center>
 </h1>
+
+
     
 <h1 class ="attr2"><a href = "life_index.html">WEB</a></h1> 
     <table style = "width:100%">
@@ -54,8 +86,8 @@
                 <li><a href = "htmljavascript.html">How to use HTML JavaScript</a></li>
                 <li><a href = "htmlfilepaths.html">How to use File Paths</a></li>
                 <li><a href = "htmltheheadelement.html">How to use Head</a></li>
-                <li></li>
-                <li></li>
+                <li><a href = "htmlresponsive.html">What is Responsive Web Design</a></li>
+                <li><a href = "htmlExbootstrap.html">Bootstrap Example</a></li>
                 <li></li>
                 <li></li>
                 <li></li>
@@ -80,9 +112,7 @@
             </th>
         </tr>
     </table> 
-   
 
-  
 
    
     </body>

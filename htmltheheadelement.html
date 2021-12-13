@@ -39,7 +39,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <head>
         <link rel="stylesheet" href="style1.css">
-
+        <base href = "https://www.w3schools.com/" target="_blank">
     </head>
 <body>
     <h1 class = "attr1">
@@ -66,8 +66,8 @@
                 <li><a href = "htmliframes.html">How to use HTML iframes</a></li>
                 <li><a href = "htmljavascript.html">How to use HTML JavaScript</a></li>
                 <li><a href = "htmlfilepaths.html">How to use File Paths</a></li>
-                <li></li>
-                <li></li>
+                <li><a href = "htmltheheadelement.html">How to use Head</a></li>
+                <li><a href = "htmlresponsive.html">What is Responsive Web Design</a></li>       
                 <li></li>
                 <li></li>
                 <li></li>
@@ -134,6 +134,36 @@
     <p>The viewport is the user's visible area of a web page. It varies with the device - 
         it will be smaller on a mobile phone than on a computer screen.</p>
     <p>You should include the following 'meta' element in all your web pages:</p>
+
+    <hr size = "2px" color = "purple" >
+    <h3>The HTML script Element</h3>
+    <p>The script element is used to defined clint-side JavaScript</p>
+    <script>
+        function myFunction()   {
+            document.getElementById("demo").innerHTML = "Hello JavaScript";
+        }
+    </script>
+    <button type = "button">NOTHING</button>
+
+    <hr size = "2px" color = "purple" >
+    <h3>The HTML BASE Element</h3>
+    <P>The base element specifies the base URL and/or target for all relative URLs in a page.</P>
+    <p>문서 안의 모든 상대 url 이 사용할 기준 url 을 지정함.</p>
+    <p>href --> 문서 내 상대 URL 이 사용할 기준 URL. 절대 - 상대 URL 사용 가능</p>
+    <p>target --> target 속성을 명시하지 않은 a, area, form 요소가 탐색 유발했을 때, 결과를 보여줄 기본 브라우징 맥락</p>
+    <br>
+    <hr size = "2px" color = "purple" >
+    <p><img src = "stickman.gif" width = "30" height = "50" alt = "STICKMAN">
+        -- Notice that we have only specified a relative address for the image. 
+        Since we have specified a base URL in the head section, 
+        the browser will look for the image at "https://sangjinhan1998.github.io/web1/".
+    </p>
+
+    <p><a href = "https://www.w3schools.com/tags/tag_base.asp">HTML base tag</a>--Notice that the link opens in a new window, 
+        even if it has no target="_blank" attribute. 
+        This is because the target attribute of the base element is set to "_blank".
+    </p>
+
     </body>
     
     </html>
